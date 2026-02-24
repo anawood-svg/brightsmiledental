@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bright Smile Dental — Gentle Family Dentistry</title>
+  <meta name="description"
+    content="Bright Smile Dental provides gentle, compassionate dental care for families and anxious patients. Book your smile makeover today." />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <div class="logo-icon"><span class="material-symbols-outlined">dentistry</span></div>
+        <div class="logo-text">Bright <span>Smile</span></div>
+      </a>
+      <nav class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#doctors">Our Doctors</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#faq">FAQ</a>
+        <a href="#booking">Book Now</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="tel:5551234567" class="nav-phone">
+          <span class="material-symbols-outlined fill-icon">call</span> (555) 123-4567
+        </a>
+        <a href="#booking" class="btn btn-primary" style="padding:12px 24px;font-size:0.88rem;">Book Appointment</a>
+      </div>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-header">
+      <div class="logo">
+        <div class="logo-icon"><span class="material-symbols-outlined">dentistry</span></div>
+        <div class="logo-text">Bright <span>Smile</span></div>
+      </div>
+      <button id="closeNav" aria-label="Close menu"><span class="material-symbols-outlined"
+          style="font-size:28px;color:var(--gray-700)">close</span></button>
+    </div>
+    <a href="#services" onclick="closeMobileNav()">Services</a>
+    <a href="#doctors" onclick="closeMobileNav()">Our Doctors</a>
+    <a href="#testimonials" onclick="closeMobileNav()">Reviews</a>
+    <a href="#faq" onclick="closeMobileNav()">FAQ</a>
+    <a href="#booking" onclick="closeMobileNav()">Book Appointment</a>
+    <a href="tel:5551234567" style="margin-top:auto;color:var(--teal);font-weight:700;">
+      <span class="material-symbols-outlined fill-icon" style="vertical-align:middle;margin-right:8px;">call</span>
+      (555) 123-4567
+    </a>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content fade-up">
+          <div class="badge"><span class="material-symbols-outlined" style="font-size:16px;">favorite</span> Gentle
+            Family Dentistry</div>
+          <h1>Gentle Care for Every <span>Smile</span></h1>
+          <p>Experience a stress-free visit designed specifically for families and anxious patients. Your comfort is our
+            absolute priority.</p>
+          <div class="hero-buttons">
+            <a href="#booking" class="btn btn-primary">
+              Book Your Smile Makeover
+              <span class="material-symbols-outlined">calendar_today</span>
+            </a>
+            <a href="#services" class="btn btn-outline">Our Services</a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <div class="hero-stat-value">5.0★</div>
+              <div class="hero-stat-label">Google Rating</div>
+            </div>
+            <div>
+              <div class="hero-stat-value">1,000+</div>
+              <div class="hero-stat-label">Happy Families</div>
+            </div>
+            <div>
+              <div class="hero-stat-value">15+</div>
+              <div class="hero-stat-label">Years Experience</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image fade-up stagger-2">
+          <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&h=600&fit=crop&q=80"
+            alt="A happy smiling family at Bright Smile Dental" />
+          <div class="hero-float-card card-1">
+            <span class="material-symbols-outlined fill-icon" style="color:var(--teal);font-size:28px;">verified</span>
+            <div>
+              <div style="font-weight:700;color:var(--gray-900);font-size:0.9rem;">Board Certified</div>
+              <div style="font-size:0.75rem;color:var(--gray-400);">All our dentists</div>
+            </div>
+          </div>
+          <div class="hero-float-card card-2">
+            <span class="material-symbols-outlined fill-icon"
+              style="color:var(--yellow-400);font-size:28px;">star</span>
+            <div>
+              <div style="font-weight:700;color:var(--gray-900);font-size:0.9rem;">Top Rated</div>
+              <div style="font-size:0.75rem;color:var(--gray-400);">500+ 5-star reviews</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRUST BAR ===== -->
+  <div class="trust-bar">
+    <div class="trust-bar-inner container">
+      <div class="trust-item">
+        <div class="trust-stars">
+          <span class="material-symbols-outlined fill-icon">star</span><span
+            class="material-symbols-outlined fill-icon">star</span><span
+            class="material-symbols-outlined fill-icon">star</span><span
+            class="material-symbols-outlined fill-icon">star</span><span
+            class="material-symbols-outlined fill-icon">star</span>
+        </div>
+        <span class="trust-label">5.0 Google Rating</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-value">1,000+</span>
+        <span class="trust-label">Happy Families</span>
+      </div>
+      <div class="trust-item">
+        <span class="material-symbols-outlined fill-icon" style="color:var(--teal);">verified</span>
+        <span class="trust-label">Board Certified</span>
+      </div>
+      <div class="trust-item">
+        <span class="material-symbols-outlined fill-icon" style="color:var(--blue);">shield</span>
+        <span class="trust-label">Insurance Accepted</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="section section-alt" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge"><span class="material-symbols-outlined" style="font-size:16px;">medical_services</span> What
+          We Offer</div>
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-subtitle">Comprehensive dental solutions tailored to your family's needs — all under one roof.
+        </p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card fade-up stagger-1">
+          <div class="service-icon blue"><span class="material-symbols-outlined">flare</span></div>
+          <h4>Cleanings &amp; Checkups</h4>
+          <p>Routine preventive care to keep your smile healthy and bright, in a relaxing environment.</p>
+        </div>
+        <div class="service-card fade-up stagger-2">
+          <div class="service-icon teal"><span class="material-symbols-outlined">light_mode</span></div>
+          <h4>Teeth Whitening</h4>
+          <p>Professional brightening treatments that deliver dramatic results in just one comfortable visit.</p>
+        </div>
+        <div class="service-card fade-up stagger-3">
+          <div class="service-icon indigo"><span class="material-symbols-outlined">health_metrics</span></div>
+          <h4>Dental Implants</h4>
+          <p>Permanent, natural-looking tooth replacements using the latest minimally-invasive techniques.</p>
+        </div>
+        <div class="service-card emergency fade-up stagger-4">
+          <div class="service-icon red"><span class="material-symbols-outlined">emergency</span></div>
+          <h4>Emergency Care</h4>
+          <p>24/7 urgent support when you need it most. Same-day appointments available for emergencies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DOCTORS ===== -->
+  <section class="section" id="doctors">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge"><span class="material-symbols-outlined" style="font-size:16px;">groups</span> Our Team</div>
+        <h2 class="section-title">Meet Our Doctors</h2>
+        <p class="section-subtitle">Gentle hands, expert minds. Our board-certified team specializes in compassionate,
+          anxiety-free care.</p>
+      </div>
+      <div class="doctors-grid">
+        <div class="doctor-card fade-up stagger-1">
+          <img class="doctor-photo"
+            src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=500&fit=crop&crop=face&q=80"
+            alt="Dr. Sarah Bright, Cosmetic Specialist" />
+          <div class="doctor-info">
+            <h4>Dr. Sarah Bright</h4>
+            <div class="specialty">Cosmetic Specialist</div>
+            <div class="credentials">DDS, Harvard School of Dental Medicine</div>
+          </div>
+        </div>
+        <div class="doctor-card fade-up stagger-2">
+          <img class="doctor-photo"
+            src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&h=500&fit=crop&crop=face&q=80"
+            alt="Dr. James Miller, Pediatric Specialist" />
+          <div class="doctor-info">
+            <h4>Dr. James Miller</h4>
+            <div class="specialty">Pediatric Specialist</div>
+            <div class="credentials">DDS, UCLA School of Dentistry</div>
+          </div>
+        </div>
+        <div class="doctor-card fade-up stagger-3">
+          <img class="doctor-photo"
+            src="https://images.unsplash.com/photo-1643297654416-05795d62e39c?w=400&h=500&fit=crop&crop=face&q=80"
+            alt="Dr. Maria Chen, General &amp; Sedation Dentistry" />
+          <div class="doctor-info">
+            <h4>Dr. Maria Chen</h4>
+            <div class="specialty">General &amp; Sedation Dentistry</div>
+            <div class="credentials">DMD, NYU College of Dentistry</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section section-alt" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge"><span class="material-symbols-outlined" style="font-size:16px;">chat_bubble</span> Patient
+          Stories</div>
+        <h2 class="section-title">What Our Patients Say</h2>
+        <p class="section-subtitle">Real experiences from real families who found their dental home with us.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card fade-up stagger-1">
+          <span class="material-symbols-outlined testimonial-quote">format_quote</span>
+          <div class="testimonial-stars">
+            <span class="material-symbols-outlined fill-icon">star</span><span
+              class="material-symbols-outlined fill-icon">star</span><span
+              class="material-symbols-outlined fill-icon">star</span><span
+              class="material-symbols-outlined fill-icon">star</span><span
+              class="material-symbols-outlined fill-icon">star</span>
+          </div>
+          <p class="testimonial-text">"My kids actually look forward to coming here! The staff is so kind and patient.
+            It's the first dental office where nobody cried — including me."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar-placeholder">JD</div>
+            <div>
+              <div class="testimonial-name">Jennifer Davis</div>
+              <div class="testimonial-since">Patient since 2019</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card featured fade-up stagger-2">
+          <span class="material-symbols-outlined testimonial-quote">format_quote</span>
+          <div class="testimonial-stars">
+            <span class="material-symbols-outlined fill-icon">star</span><span
+              class="material-symbols-outlined fill-icon">star</span><span
+              class="material-symbols-outlined fill-icon">star</span><span
+              class="material-symbols-outlined fill-icon">star</span><span
+              class="material-symbols-outlined fill-icon">star</span>
+          </div>
+          <p class="testimonial-text">"I used to be terrified of dentists, but the team here made me feel so calm and
+            comfortable. The sedation options changed everything. Best experience ever!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar-placeholder">EJ</div>
+            <div>
+              <div class="testimonial-name">Emily Johnson</div>
+              <div class="testimonial-since">Patient since 2021</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card fade-up stagger-3">
+          <span class="material-symbols-outlined testimonial-quote">format_quote</span>
+          <div class="testimonial-stars">
+            <span class="material-symbols-outlined fill-icon">star</span><span
+              class="material-symbols-outlined fill-icon">star</span><span
+              class="material-symbols-outlined fill-icon">star</span><span
+              class="material-symbols-outlined fill-icon">star</span><span
+              class="material-symbols-outlined fill-icon">star</span>
+          </div>
+          <p class="testimonial-text">"Dr. Miller did my implants and the results are incredible. Completely painless
+            procedure and the follow-up care was thorough and professional."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar-placeholder">RT</div>
+            <div>
+              <div class="testimonial-name">Robert Thompson</div>
+              <div class="testimonial-since">Patient since 2022</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BOOKING ===== -->
+  <section class="section booking-section" id="booking">
+    <div class="container">
+      <div class="booking-inner">
+        <div class="booking-info fade-up">
+          <div class="badge"><span class="material-symbols-outlined" style="font-size:16px;">calendar_today</span> Easy
+            Scheduling</div>
+          <h3 class="section-title">Book Your Visit</h3>
+          <p class="section-subtitle">Pick a time that works for you. No pressure, no judgment — just gentle, expert
+            care.</p>
+          <div class="booking-features">
+            <div class="booking-feature">
+              <span class="material-symbols-outlined fill-icon">location_on</span>
+              <p><strong>Our Location</strong> — <a
+                  href="https://maps.google.com/?q=6600+Boulevard+East,+West+New+York,+NJ+07093" target="_blank"
+                  rel="noopener noreferrer" style="color:var(--teal); text-decoration:underline;">6600 Boulevard East,
+                  West New York, NJ 07093</a></p>
+            </div>
+            <div class="booking-feature">
+              <span class="material-symbols-outlined fill-icon">check_circle</span>
+              <p><strong>Same-Day Appointments</strong> — available for emergencies and urgent needs</p>
+            </div>
+            <div class="booking-feature">
+              <span class="material-symbols-outlined fill-icon">check_circle</span>
+              <p><strong>Flexible Scheduling</strong> — morning, afternoon, and Saturday hours</p>
+            </div>
+            <div class="booking-feature">
+              <span class="material-symbols-outlined fill-icon">check_circle</span>
+              <p><strong>Insurance Friendly</strong> — we accept most major dental insurance plans</p>
+            </div>
+            <div class="booking-feature">
+              <span class="material-symbols-outlined fill-icon">check_circle</span>
+              <p><strong>Confirmation Call</strong> — our care team will confirm and answer questions</p>
+            </div>
+          </div>
+        </div>
+        <div class="new-booking-ui fade-up stagger-2">
+          <div class="new-booking-layout">
+            <div class="booking-flow">
+              <!-- Step 1: Patient Details (Hidden) -->
+              <div id="step-1-details" style="display: none;">
+                <h3 class="booking-flow-title">Have you visited us before?</h3>
+                <!-- Existing Patient -->
+                <div class="patient-card active">
+                  <div class="patient-card-header">
+                    <span class="patient-card-title">I'm an existing patient</span>
+                    <input type="radio" name="patient_type" checked class="patient-radio" />
+                  </div>
+                  <div class="patient-card-body">
+                    <div class="form-row">
+                      <div class="form-group-line">
+                        <label>First name</label>
+                        <input type="text" />
+                      </div>
+                      <div class="form-group-line">
+                        <label>Last name</label>
+                        <input type="text" />
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group-line error">
+                        <label>Birthday</label>
+                        <input type="text" placeholder="MM/DD/YYYY" />
+                        <span class="material-symbols-outlined input-icon">calendar_today</span>
+                        <span class="error-msg">Date of birth is required</span>
+                      </div>
+                    </div>
+
+                    <div class="form-question">
+                      <p>Has your insurance changed since your last visit?</p>
+                      <div class="radio-group">
+                        <label><input type="radio" name="ins_change"> Yes</label>
+                        <label><input type="radio" name="ins_change"> No</label>
+                      </div>
+                    </div>
+
+                    <p class="form-instruction">Please fill out all the fields to continue</p>
+                  </div>
+                </div>
+
+                <!-- New Patient -->
+                <div class="patient-card">
+                  <div class="patient-card-header">
+                    <span class="patient-card-title">I'm a new patient</span>
+                    <input type="radio" name="patient_type" class="patient-radio" />
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Step 3: Time Slot UI -->
+              <div id="step-3-timeslot" class="time-slot-view" style="display: block;">
+                <h3 class="booking-flow-title" style="margin-bottom: 8px;">What time is convenient for you?</h3>
+                <div class="out-of-network"
+                  style="display: flex; align-items: center; gap: 6px; color: var(--gray-500); font-size: 0.85rem; margin-bottom: 24px;">
+                  <span class="material-symbols-outlined" style="font-size: 16px;">error</span> Out-of-network
+                </div>
+
+                <div class="date-picker-container"
+                  style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px;">
+                  <button class="icon-btn"
+                    style="border: none; background: none; color: var(--gray-400); cursor: pointer;"><span
+                      class="material-symbols-outlined">chevron_left</span></button>
+                  <div class="date-cards" style="display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px;">
+                    <button class="date-card">
+                      <div class="date-month">Feb 23</div>
+                      <div class="date-day">Mon</div>
+                    </button>
+                    <button class="date-card active">
+                      <div class="date-month">Feb 24</div>
+                      <div class="date-day">Tue</div>
+                    </button>
+                    <button class="date-card">
+                      <div class="date-month">Feb 25</div>
+                      <div class="date-day">Wed</div>
+                    </button>
+                    <button class="date-card">
+                      <div class="date-month">Feb 26</div>
+                      <div class="date-day">Thu</div>
+                    </button>
+                    <button class="date-card disabled">
+                      <div class="date-month">Feb 27</div>
+                      <div class="date-day">Fri</div>
+                    </button>
+                    <button class="date-card disabled">
+                      <div class="date-month">Feb 28</div>
+                      <div class="date-day">Sat</div>
+                    </button>
+                    <button class="date-card disabled">
+                      <div class="date-month">Mar 01</div>
+                      <div class="date-day">Sun</div>
+                    </button>
+                  </div>
+                  <button class="icon-btn"
+                    style="border: none; background: none; color: var(--gray-400); cursor: pointer;"><span
+                      class="material-symbols-outlined">chevron_right</span></button>
+                </div>
+
+                <div class="time-filters" style="display: flex; gap: 8px; margin-bottom: 24px;">
+                  <button class="time-filter-btn" style="flex: 1;"><span class="material-symbols-outlined"
+                      style="font-size: 16px; margin-right: 6px;">wb_twilight</span> Morning</button>
+                  <button class="time-filter-btn" style="flex: 1;"><span class="material-symbols-outlined"
+                      style="font-size: 16px; margin-right: 6px;">light_mode</span> Afternoon</button>
+                  <button class="time-filter-btn" style="flex: 1;"><span class="material-symbols-outlined"
+                      style="font-size: 16px; margin-right: 6px;">dark_mode</span> Evening</button>
+                </div>
+
+                <div class="provider-section"
+                  style="background: var(--white); border: 1px solid var(--gray-100); border-radius: var(--radius-sm); padding: 24px; margin-bottom: 24px;">
+                  <div class="provider-header"
+                    style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px; color: var(--gray-500); font-weight: 500; font-size: 0.9rem; text-transform: uppercase;">
+                    <span class="material-symbols-outlined" style="font-size: 18px;">person</span> ALLISON JANG
+                  </div>
+                  <div class="time-slots-grid"
+                    style="display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 12px;">
+                    <button class="time-slot-btn">02:00 pm</button>
+                    <button class="time-slot-btn">03:00 pm</button>
+                  </div>
+                </div>
+
+                <div class="booking-actions"
+                  style="justify-content: space-between; align-items: center; display: flex;">
+                  <button class="btn-back"
+                    style="background: none; border: none; color: var(--blue); font-weight: 500; display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 1rem;"><span
+                      class="material-symbols-outlined" style="font-size: 18px;">arrow_back</span> Back</button>
+                  <button class="btn-continue" style="background: var(--blue);">Continue</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="booking-stepper">
+              <div class="step-item">
+                <div class="step-dot"></div>
+                <span class="step-text">Patient details</span>
+                <span class="step-num">1/4</span>
+              </div>
+              <div class="step-item">
+                <div class="step-dot"></div>
+                <span class="step-text">Reason for visit</span>
+                <span class="step-num">2/4</span>
+              </div>
+              <div class="step-item active">
+                <div class="step-dot solid"></div>
+                <span class="step-text">Time slot</span>
+                <span class="step-num">3/4</span>
+              </div>
+              <div class="step-item">
+                <div class="step-dot"></div>
+                <span class="step-text">Summary</span>
+                <span class="step-num">4/4</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge"><span class="material-symbols-outlined" style="font-size:16px;">help</span> Common Questions
+        </div>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Find gentle answers to your concerns about insurance, pain management, and more.</p>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <button class="faq-question"><span class="icon"><span class="material-symbols-outlined">verified_user</span>
+              Will my treatment hurt?</span><span class="material-symbols-outlined arrow">expand_more</span></button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Absolutely not! We use the latest pain-free techniques, including topical
+              numbing agents applied before any injection, "The Wand" computer-controlled anesthetic system, and
+              optional sedation dentistry. Most patients tell us they felt nothing at all.</div>
+          </div>
+        </div>
+        <div class="faq-item open" onclick="toggleFaq(this)">
+          <button class="faq-question"><span class="icon"><span class="material-symbols-outlined">psychology</span> What
+              if I'm very nervous or anxious?</span><span
+              class="material-symbols-outlined arrow">expand_more</span></button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">We specialize in gentle care for anxious patients. We offer several levels of
+              sedation, noise-canceling headphones, weighted blankets, and "The Wand" — a computer-controlled local
+              anesthetic delivery system that is virtually painless. You're in complete control at every step.</div>
+          </div>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <button class="faq-question"><span class="icon"><span
+                class="material-symbols-outlined">account_balance_wallet</span> Do you accept my insurance?</span><span
+              class="material-symbols-outlined arrow">expand_more</span></button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">We accept most major dental insurance plans including Delta Dental, Cigna,
+              Aetna, MetLife, Guardian, and many more. Our billing team will verify your benefits before your visit, so
+              there are no surprises. We also offer flexible payment plans for uninsured patients.</div>
+          </div>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <button class="faq-question"><span class="icon"><span class="material-symbols-outlined">family_restroom</span>
+              Is this practice good for children?</span><span
+              class="material-symbols-outlined arrow">expand_more</span></button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Yes! Dr. Miller is a board-certified pediatric specialist. Our office has a
+              dedicated kids' area, gentle techniques designed for little ones, and a "no tears" policy. We make dental
+              visits fun, so your kids grow up with healthy habits and positive associations.</div>
+          </div>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <button class="faq-question"><span class="icon"><span class="material-symbols-outlined">payments</span> What
+              are my payment options?</span><span class="material-symbols-outlined arrow">expand_more</span></button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">We accept all major credit cards, HSA/FSA accounts, and offer in-house
+              financing through CareCredit with 0% interest for up to 18 months. We believe cost should never be a
+              barrier to great dental care. Ask our team about our uninsured patient discount program.</div>
+          </div>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <button class="faq-question"><span class="icon"><span class="material-symbols-outlined">emergency</span> What
+              counts as a dental emergency?</span><span
+              class="material-symbols-outlined arrow">expand_more</span></button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Severe toothaches, knocked-out or broken teeth, lost fillings or crowns,
+              swelling, or bleeding that won't stop are all emergencies. Call us anytime at (555) 123-4567 — we offer
+              same-day emergency appointments and our on-call team is available 24/7.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <div class="cta-banner">
+    <div class="container cta-banner-inner">
+      <p><span class="material-symbols-outlined fill-icon" style="vertical-align:middle;margin-right:8px;">call</span>
+        Rather speak with someone? Our care coordinators are available 8am – 6pm</p>
+      <a href="tel:5551234567" class="btn">Call (555) 123-4567</a>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo" style="margin-bottom:8px;">
+            <div class="logo-icon"><span class="material-symbols-outlined">dentistry</span></div>
+            <div class="logo-text">Bright <span>Smile</span></div>
+          </div>
+          <p>Gentle, compassionate dental care for the whole family. Your comfort is our promise — every visit, every
+            time.</p>
+        </div>
+        <div>
+          <h5>Services</h5>
+          <a href="#services">Cleanings</a>
+          <a href="#services">Whitening</a>
+          <a href="#services">Implants</a>
+          <a href="#services">Emergency</a>
+        </div>
+        <div>
+          <h5>Clinic</h5>
+          <a href="#doctors">Our Doctors</a>
+          <a href="#testimonials">Reviews</a>
+          <a href="#faq">FAQ</a>
+          <a href="#booking">Book Online</a>
+        </div>
+        <div>
+          <h5>Contact</h5>
+          <a href="tel:5551234567">(555) 123-4567</a>
+          <a href="mailto:hello@brightsmile.com">hello@brightsmile.com</a>
+          <a>Mon–Sat: 8am – 6pm</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Bright Smile Dental. All rights reserved.</span>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><span class="material-symbols-outlined"
+              style="font-size:18px;color:white;">group</span></a>
+          <a href="#" aria-label="Instagram"><span class="material-symbols-outlined"
+              style="font-size:18px;color:white;">photo_camera</span></a>
+          <a href="#" aria-label="Twitter"><span class="material-symbols-outlined"
+              style="font-size:18px;color:white;">tag</span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Header scroll effect
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    // Mobile nav
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    const closeBtn = document.getElementById('closeNav');
+    hamburgerBtn.addEventListener('click', () => mobileNav.classList.add('open'));
+    closeBtn.addEventListener('click', () => mobileNav.classList.remove('open'));
+    function closeMobileNav() { mobileNav.classList.remove('open'); }
+
+    // FAQ toggle
+    function toggleFaq(item) {
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
+    }
+
+    // Time button select
+    function selectTime(btn) {
+      document.querySelectorAll('.time-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+
+    // Booking form (Commented out because form ID was removed in redesign)
+    /* document.getElementById('bookingForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const btn = this.querySelector('button[type="submit"]');
+      btn.innerHTML = '<span class="material-symbols-outlined fill-icon">check_circle</span> Request Sent!';
+      btn.style.background = 'var(--teal)';
+      btn.style.boxShadow = '0 4px 16px rgba(44,181,160,0.35)';
+      setTimeout(() => {
+        btn.innerHTML = 'Request a Call Back <span class="material-symbols-outlined">calendar_today</span>';
+        btn.style.background = ''; btn.style.boxShadow = '';
+        this.reset();
+        document.querySelector('.time-btn').classList.add('active');
+      }, 3000);
+    }); */
+
+    // Scroll animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) { entry.target.classList.add('visible'); }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+</body>
+
+</html>
